@@ -1,0 +1,26 @@
+###########################
+# 1944 - Downfall: Leningrad taken: daily check (docs/CHANGELOG.md sections 23 and 25)
+#
+# Fires once, the first day we hold the city itself (province 3151, state 195)
+# while at war with the Soviet Union, from the 1944 start on. The game cannot
+# tell where a battle is fought, so an event for the attack on the city is not
+# possible; this is the fallback Oscar asked for. The game's own news event
+# "The Fall of Leningrad" (news.103) also fires, for every country.
+###########################
+
+on_actions = {
+	on_daily_GER = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = GER_leningrad_done }
+					date > 1943.12.31
+					has_war_with = SOV
+					controls_province = 3151
+				}
+				set_country_flag = GER_leningrad_done
+				country_event = { id = ger_leningrad.1 }
+			}
+		}
+	}
+}

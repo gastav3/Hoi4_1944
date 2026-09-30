@@ -1,0 +1,11 @@
+# 1944 - Downfall: the first German atomic bomb (docs/CHANGELOG.md section 22)
+# Picture supplied by Oscar Andersson; its source is not recorded. An
+# illustration for an alternate-history event, not a historical photograph
+# (Germany never tested an atomic bomb): German officers watching a nuclear
+# explosion. Cut to 210 x 176 in the style of the game's event pictures.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_GER_first_bomb"
+		texturefile = "gfx/events/report_event_GER_first_bomb.dds"
+	}
+}

@@ -1,0 +1,17 @@
+###########################
+# 1944 - Downfall: Leningrad taken: event (docs/CHANGELOG.md sections 23 and 25)
+###########################
+
+add_namespace = ger_leningrad
+
+# 1. Leningrad taken (flavour only)
+country_event = {
+	id = ger_leningrad.1
+	title = ger_leningrad.1.t
+	desc = ger_leningrad.1.d
+	picture = GFX_report_event_GER_leningrad
+	is_triggered_only = yes
+	option = {
+		name = ger_leningrad.1.a
+	}
+}
